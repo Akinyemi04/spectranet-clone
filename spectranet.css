@@ -18,7 +18,7 @@ body{
     width:30%;
 }
 
-div .ul{
+div ul{
     list-style: none;
     width:100%;
     padding:10px 0;
@@ -318,4 +318,30 @@ address{
 }
 .cam{
     color: white;
+}
+.top{
+    position:relative;
+}
+.bottom{
+    display:none ;
+    position: absolute;
+    background-color: blue;
+    color: #f3f3f1;
+    z-index: 1;
+    border: 1px solid blue;
+    border-radius: 6px;
+
+}
+.bottom li{
+    padding: 3px;
+    display:block
+}
+.ay:hover +.bottom{
+    display:block;
+}
+.by:hover +.bottom{
+    display: block;
+}
+.cy:hover +.bottom{
+    display: block;
 }
